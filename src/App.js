@@ -2,6 +2,10 @@ import "./App.css";
 import Button from "./components/Button";
 import Aside from "./components/Aside"
 
+const footer = (
+  <footer className="footer">created by bamideleaduke - devChallenges.io</footer>
+  );
+
 
 function App() {
   return (
@@ -59,8 +63,8 @@ function App() {
       <Button color="lg secondary" text="Default" />
     </div>
      </section>
+      {footer}
       </main>
-
     </div>
   );
 }
