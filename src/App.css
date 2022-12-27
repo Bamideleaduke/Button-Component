@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+/* side menu */
+.aside{
+  background-color: #FAFBFD;
+  /* position: absolute; */
+  width: 120px;
+  height: 100vh;
+  padding: 1.5rem 0 0 1rem;
+}
+.highlight{
+  color: #F7542E;
+}
+.logo{
+  /* padding-top: 1.5rem; */
+  text-align: left;
+  font-size: 0.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.nav-menu{
+  list-style-type: none;
+  text-align: left;
+  /* padding-left: 1rem; */
+  margin-top: 6rem;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+.nav-link{
+  color:#9E9E9E;
+  margin: 1.7rem 0;
+  font-size: 0.6rem;
+}
+/* side menu */
+
+/* main */
+section{
+  margin: 1.5rem 0;
+}
+.btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+h5{
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  
+}
+.main{
+  width: calc(100vw - 120px);
+  background-color: #fff;
+  padding: 1.5rem 1.5rem 0 1.5rem;  
+}
+/* shopping cart */
+.fa-cart-shopping{
+  color: #fff;
+}
+.starticon{
+  margin-right: 0.3rem;
+}
+.endicon{
+  margin-left: 0.3rem;
+}
+/* button classes */
+.title{
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+/* button default */
+button{
+  font-family: 'Noto Sans', sans-serif;
+  background-color:#E0E0E0;
+  color: #3f3f3f;
+  font-weight: 500;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+button:hover{
+  background-color:#AEAEAE ;
+}
+/* outline */
+.outline{
+  border: 1px solid#3D5AFE;
+  color: #3D5AFE;
+  background:none ;
+}
+.outline:hover{
+  background-color: #345bc826;
+}
+/* text */
+.text{
+  background: none;
+  border: 0;
+  color: #3D5AFE;
+}
+.text:hover{
+  background-color: #345bc826;
+  border: #345bc826;
+}
+/* disabledShadow */
+  .disableShadow{
+    background-color: #3D5AFE;
+    color:#fff ;
+  }
+
+  /* disabled */
+  .disabled{
+    opacity: 0.65;
+    cursor: not-allowed;
+    color:#9E9E9E;
+  }
+  /* local grocery store icon */
+.icon{
+      background-color: #3D5AFE;
+      color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+/* sizes */
+.sm{
+  padding:  0.1rem 0.7rem ;
+}
+.md{
+  padding: 0.5rem 1.1rem;
+}
+.lg{
+  padding: 0.7rem 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* colors */
+.default{
+  background-color:#E0E0E0;
+  color: #3f3f3f;
 }
+.default:hover{
+  background-color:#AEAEAE ;
+}
+.primary{
+  background-color: #3D5AFE;
+  color: #fff;
+}
+.primary:hover{
+  background-color: #0039CB;
+}
+.secondary{
+  background-color:#455A64;
+  color: #fff;
+}
+.secondary:hover{
+  background-color:#1C313A;
+}
+
+
+@media only screen and (min-width:768px) {
+  h5{
+    text-align: left;
+  }  
+  .aside{
+      width: 200px;
+      padding-left: 2rem;
+    }
+  
+    .main{
+      width: calc(100vw - 200px)
+    }
+    .logo{
+      font-size: 1rem;
+    }
+    .nav-link{
+      font-size: 1rem;
+    }
+    .s-around{
+      justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width:1008px){
+  .main{
+    width: 50%;
+  }
+  section{
+    margin:3rem ;
+  }
+} 
