@@ -30,7 +30,7 @@ function App() {
    <section >
    <h5>Disabled</h5>
   <div className="btn s-around">
-    <Button color="disabled" text="Default" />
+    <Button color="disabled default" text="Default" />
     <Button color="text disabled" text="Default" />
   </div>
    </section>
